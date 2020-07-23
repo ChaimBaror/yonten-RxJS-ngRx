@@ -1,0 +1,18 @@
+.container{
+  display: flex;
+}
+
+.navbar {
+  margin-inline-start: 20px;
+  margin-inline-end: 20px;
+  background-color: rgb(160, 163, 216);
+  color:brown;
+}
+
+.navbar >div {
+  font-size: 20px;
+  padding: 5px;
+  border-bottom: 1px saddlebrown solid;
+  border-left: 1px saddlebrown solid;
+  border-right: 1px saddlebrown solid;
+}

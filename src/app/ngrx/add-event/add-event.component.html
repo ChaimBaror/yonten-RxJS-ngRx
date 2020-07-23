@@ -1,0 +1,22 @@
+<div >
+
+<label>name :</label><input type="name" [(ngModel)]="name"><br>
+<label> city : </label><input type="city" [(ngModel)]="city"><br>
+<label>address : </label><input type="address" [(ngModel)]="address"><br>
+<label>text :</label><input type="text" [(ngModel)]="text"><br>
+<button (click)="add()" >add event</button>
+
+</div>
+<!-- <form [formGroup]="addfrom" (ngSubmit)=add()> -->
+    <!-- <input formControlName="id"> -->
+    <!-- <input formControlName="name">
+    <input formControlName="city">
+    <input formControlName="address"> -->
+    <!-- <input formControlName="createdAt"> -->
+    <!-- <input formControlName="text">
+    <button type="submit">action</button>
+</form> -->
+
+<div>
+    <app-admin-events-list></app-admin-events-list>
+</div>

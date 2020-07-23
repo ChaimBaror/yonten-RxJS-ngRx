@@ -1,0 +1,21 @@
+<h1>books list</h1>
+<div class="container">
+
+  <div>
+    <ul>
+      <li *ngFor="let item of bookList$|async;">
+        <div  (click)="expand( item.bookDescription)">
+
+          name: {{item.bookName}}
+          
+          <!-- <button (click)="expand(index , item.bookDescription)">show more...</button> -->
+        </div>
+
+      </li>
+    </ul>
+  </div>
+  <div>
+    <h3>description</h3>
+    <div >{{currentDescription}}</div>
+  </div>
+</div>

@@ -1,0 +1,23 @@
+<h1>delay - concatMap</h1>
+<h3>from creator</h3>
+<ul>
+  <li *ngFor='let item of source1$|async'>
+    {{item}}
+  </li>
+</ul>
+
+<p>with ngIF - why we see only the last emit ?</p>
+<div *ngIf="source3$ |async as num3"> {{num3}}</div>
+<p>with growing delay (created by concatMap) </p>
+<p>why the numbers are double ??</p>
+<div>
+  <ul>
+    <li *ngFor='let item of source4$|async'>
+      {{item}}
+    </li>
+  </ul>
+  
+</div>
+<!-- <div *ngIf="source1$ |async as num1"> {{num1}}</div> -->
+<div *ngIf="source2$ |async as num2"> {{num2}}</div>
+<div *ngIf="source3$ |async as num0"> {{num0}}</div>
